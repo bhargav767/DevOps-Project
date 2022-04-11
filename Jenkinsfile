@@ -8,6 +8,7 @@ pipeline {
       agent any
       steps {
         sh 'docker build -t centos:latest .'
+        echo 'this is first webhook'
       }
 }
      stage('Docker Run') {
